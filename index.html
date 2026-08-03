@@ -1,189 +1,331 @@
 <!doctype html>
-<html class="page" lang="en">
+<html lang="en" class="page">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Nothing — technology designed to make life feel more human."
-    />
-    <title>Nothing — Feel Every Moment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22black%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22white%22>N</text></svg>"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/styles/main.scss" />
+      rel="icon shortcut"
+      href="src/images/logo.png"
+      type="image/png"
+    >
+    <title>Nothing</title>
+    <link rel="stylesheet" href="src/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono&display=swap"
+      rel="stylesheet">
+    <script src="src/scripts/main.js" type="module"></script>
   </head>
   <body class="page__body">
-    <header class="header" id="home">
-      <div class="top-bar">
-        <a class="logo" href="#home" aria-label="Nothing home">NOTHING</a>
-        <div class="top-bar__actions">
-          <a class="icon icon--phone" href="tel:+442080175745" aria-label="Call us"></a>
-          <a class="icon icon--menu" href="#menu" aria-label="Open menu"></a>
-        </div>
-      </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a href="#" class="top-bar__logo-link">
+              <img
+                src="src/images/logo.png"
+                alt="Nothing logo"
+                class="top-bar__logo"
+              >
+            </a>
 
-      <div class="header__content container">
-        <p class="header__eyebrow">Pure instinct.</p>
-        <h1 class="header__title">Feel every<br />moment.</h1>
-        <a class="button button--light" href="#products">Explore products</a>
+            <div class="top-bar__icons">
+              <span class="tel">+1 234 555-55-55</span>
+              <a href="tel:+1 234 555-55-55" class="icon icon--phone"></a>
+              <a href="#menu" class="icon icon--menu"></a>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <h1 class="header__title">Bring joy back to <br> the everyday</h1>
+          </div>
+        </div>
       </div>
     </header>
 
-    <aside class="page__menu menu" id="menu">
-      <div class="menu__top top-bar">
-        <a class="logo" href="#home">NOTHING</a>
-        <a class="icon icon--close" href="#home" aria-label="Close menu"></a>
+    <aside class="page__menu" id="menu">
+      <div class="menu">
+        <div class="container">
+          <div class="top-bar menu__top">
+            <a href="#" class="top-bar__logo-link">
+              <img
+                src="src/images/logo.png"
+                alt="Nothing logo"
+                class="top-bar__logo"
+              >
+            </a>
+
+            <a href="#" class="icon icon--close"></a>
+          </div>
+
+          <div class="menu__bottom">
+            <nav class="nav menu__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#products" class="nav__link">Products</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#store" class="nav__link">Store</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">About us</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="tel:+1 234 5555-55-55" class="menu__phone-number">
+              +1 234 5555-55-55
+            </a>
+
+            <a href="tel:+1 234 5555-55-55" class="menu__call-to-order">
+              Call to order
+            </a>
+          </div>
+        </div>
       </div>
-      <nav class="menu__nav" aria-label="Main navigation">
-        <a class="menu__link" href="#products">Products</a>
-        <a class="menu__link" href="#story">Our story</a>
-        <a class="menu__link" href="#community">Community</a>
-        <a class="menu__link" href="#contact">Contact us</a>
-      </nav>
-      <a class="menu__phone" href="tel:+442080175745">+44 20 8017 5745</a>
     </aside>
 
-    <main>
-      <section class="section container" id="products">
-        <p class="section__label">Designed in London</p>
-        <h2 class="section__title">Recommended products</h2>
-        <div class="products">
-          <article class="product">
-            <a class="product__image-link" href="#contact">
-              <img
-                class="product__image"
-                src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=85"
-                alt="White wireless earbuds"
-              />
-            </a>
-            <h3 class="product__title">Ear (2)</h3>
-            <p class="product__description">High-resolution sound. Pure connection.</p>
-            <p class="product__price">$149</p>
-          </article>
-          <article class="product">
-            <a class="product__image-link" href="#contact">
-              <img
-                class="product__image"
-                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85"
-                alt="Minimal smartphone"
-              />
-            </a>
-            <h3 class="product__title">Phone (2)</h3>
-            <p class="product__description">A new icon. Come to the bright side.</p>
-            <p class="product__price">$599</p>
-          </article>
-          <article class="product">
-            <a class="product__image-link" href="#contact">
-              <img
-                class="product__image"
-                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=85"
-                alt="Black wireless headphones"
-              />
-            </a>
-            <h3 class="product__title">Ear (stick)</h3>
-            <p class="product__description">Feather-light. Vivid sound.</p>
-            <p class="product__price">$99</p>
-          </article>
-        </div>
-      </section>
+    <main class="main">
+      <div class="main__content">
+        <section class="container recommended">
+          <h2 class="section-title" id="products">Recommended</h2>
 
-      <section class="section section--dark" id="story">
-        <div class="container split">
-          <div>
-            <p class="section__label">Our story</p>
-            <h2 class="section__title">Technology should fade into the background.</h2>
-          </div>
-          <div class="story">
-            <p>
-              We make technology fun again. By removing barriers between people and
-              technology, we create products that are intuitive, beautifully connected,
-              and unmistakably different.
-            </p>
-            <p>Less distraction. More soul.</p>
-          </div>
-        </div>
-      </section>
+          <div class="recomended__products">
+            <article class="product recomended__product">
+              <a href="#" class="product__link">
+                <img
+                  src="src/images/products/nothing-phone.png"
+                  alt="White Nothing phone"
+                  class="product__photo"
+                >
+              </a>
 
-      <section class="section container" id="community">
-        <p class="section__label">Better together</p>
-        <h2 class="section__title">Built with our community</h2>
-        <div class="gallery">
-          <a class="gallery__item gallery__item--wide" href="#contact">
-            <img
-              src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1400&q=85"
-              alt="Smartphone detail"
-            />
-          </a>
-          <a class="gallery__item" href="#contact">
-            <img
-              src="https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&w=900&q=85"
-              alt="Earbuds in a charging case"
-            />
-          </a>
-          <a class="gallery__item" href="#contact">
-            <img
-              src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=85"
-              alt="Modern smartphone on a desk"
-            />
-          </a>
-        </div>
-      </section>
+              <h3 class="product__title">Phone (1)</h3>
 
-      <section class="section container contact" id="contact">
-        <div>
-          <p class="section__label">Let’s talk</p>
-          <h2 class="section__title">Get in touch</h2>
-          <form class="form" onsubmit="this.reset(); return false;">
-            <input class="form__field" type="text" name="name" placeholder="Your name" required />
-            <input
-              class="form__field"
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              required
-            />
-            <textarea
-              class="form__field form__field--message"
-              name="message"
-              placeholder="How can we help?"
-              required
-            ></textarea>
-            <button class="button button--dark" type="submit">Send message</button>
-          </form>
-        </div>
-        <address class="contact__details">
-          <div>
-            <p class="contact__label">Phone</p>
-            <a class="contact__link" href="tel:+442080175745">+44 20 8017 5745</a>
+              <p class="product__description">
+                Designed with instinct, to bring joy back to the everyday.
+                Through the Glyph Interface, a perfected OS and exceptional
+                dual camera. All startlingly fast.
+              </p>
+
+              <p class="product_price">$ 499.00</p>
+            </article>
+
+            <article class="product recomended__product">
+              <a href="#" class="product__link">
+                <img
+                  src="src/images/products/nothing-headphones-box.png"
+                  alt="Nothing headphones box"
+                  class="product__photo"
+                >
+              </a>
+
+              <h3 class="product__title">Ear (2)</h3>
+
+              <p class="product__description">
+                Perfecting the path from artist to ear. So that music sounds
+                just as it was intended.
+              </p>
+
+              <p class="product_price">$ 149.00</p>
+            </article>
+
+            <article class="product recomended__product">
+              <a href="#" class="product__link">
+                <img
+                  src="src/images/products/nothing-headphones-stick.png"
+                  alt="Nothing headphones stick"
+                  class="product__photo"
+                >
+              </a>
+
+
+              <h3 class="product__title">Ear (stick)</h3>
+
+              <p class="product__description">
+                Perfecting the path from artist to ear. So that music sounds
+                just as it was intended.
+              </p>
+
+              <p class="product_price">$ 119.00</p>
+            </article>
           </div>
-          <div>
-            <p class="contact__label">Email</p>
-            <a class="contact__link" href="mailto:hello@nothing.tech">hello@nothing.tech</a>
+        </section>
+
+        <section class="container categories">
+          <h2 class="section-title" id="store">Browse Nothing <br>products by category</h2>
+
+          <div class="categories__wrapper">
+            <article class="category">
+              <div class="category__photos">
+                <a href="#" class="category__link category__link--wide">
+                  <img
+                    src="src/images/categories/all-products-wide.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+
+                <a href="#" class="category__link category__link--square">
+                  <img
+                    src="src/images/categories/all-products-square.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+              </div>
+
+              <h3 class="category__title">All products</h3>
+            </article>
+
+            <article class="category">
+              <div class="category__photos">
+                <a href="#" class="category__link category__link--square">
+                  <img
+                    src="src/images/categories/audio-square.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+
+                <a href="#" class="category__link category__link--wide">
+                  <img
+                    src="src/images/categories/audio-wide.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+              </div>
+
+              <h3 class="category__title">Audio</h3>
+            </article>
+
+            <article class="category">
+              <div class="category__photos">
+                <a href="#" class="category__link category__link--wide">
+                  <img
+                    src="src/images/categories/accessories-wide.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+
+                <a href="#" class="category__link category__link--square">
+                  <img
+                    src="src/images/categories/accessories-square.png"
+                    alt="All products"
+                    class="category__photo"
+                  >
+                </a>
+              </div>
+
+              <h3 class="category__title">Accessories</h3>
+            </article>
+
+            <a href="#" class="category__button">View all</a>
           </div>
-          <div>
-            <p class="contact__label">Address</p>
-            <a
-              class="contact__link"
-              href="https://maps.google.com/?q=32+Rivington+Street+London"
-              target="_blank"
-              rel="noreferrer"
-            >32 Rivington Street<br />London EC2A 3LX</a>
+        </section>
+
+        <section class="about">
+          <img
+           src="src/images/about-us-bg-2.png"
+           alt="background"
+           class="about__bg"
+          >
+
+          <div class="container about__container">
+            <h2 class="section-title about__title" id="about">About us</h2>
+
+            <div class="about__content">
+              <p class="about__text">
+                We’re a London-based tech company on a mission to remove
+                barriers between people and technology
+              </p>
+
+              <p class="about__text">
+                To do this, we’re crafting intuitive, flawlessly connected
+                products that improve our lives without getting in the way. No
+                confusing tech-speak. No silly product names. Just artistry,
+                passion and trust. And products we’re proud to share with our
+                friends and family. Simple.
+              </p>
+
+              <p class="about__text">
+                Because beautiful tech shouldn’t be complicated.
+              </p>
+            </div>
           </div>
-        </address>
-      </section>
+        </section>
+
+        <section class="container contact">
+          <h2 class="section-title" id="contact">Contact us</h2>
+
+          <div class="contact-container">
+            <div class="contact-container__form">
+              <form onsubmit="this.reset(); return false;" class="contact__form">
+                <div class="contact__form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    class="contact__form-field__element contact__form-field__input"
+                    >
+                </div>
+
+                <div class="contact__form-field">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    class="contact__form-field__element contact__form-field__input"
+                  >
+                </div>
+
+                <div class="contact__form-field">
+                  <textarea
+                    name="message"
+                    placeholder="Messasge"
+                    required
+                    class="contact__form-field__element contact__form-field__textarea"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact__button">Send</button>
+              </form>
+            </div>
+
+            <div class="contact-container__company-datas">
+              <div class="contact__company-data">
+                <p>Phone</p>
+
+                <a href="tel:+1 234 5555-55-55">+1 234 5555-55-55</a>
+              </div>
+              <div class="contact__company-data">
+                <p>Email</p>
+
+                <a href="mailto:hello@nothing.com">hello@nothing.com</a>
+              </div>
+              <div class="contact__company-data">
+                <p>Address</p>
+
+                <a href="https://maps.app.goo.gl/nT6zpJrcmgzYHvsn7" target="_blank">
+                  400 first ave. <br>
+                  suite 700 <br>
+                  Minneapolis, MN 55401 <br>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-
-    <footer class="footer">
-      <a class="logo logo--footer" href="#home">NOTHING</a>
-      <p class="footer__copyright">© 2026 Nothing Technology Limited</p>
-    </footer>
   </body>
 </html>
