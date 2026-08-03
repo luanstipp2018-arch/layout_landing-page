@@ -1,22 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      name="description"
+      content="Nothing — technology designed to make life feel more human."
     />
-    <title>Landing Page</title>
+    <title>Nothing — Feel Every Moment</title>
     <link
-      rel="stylesheet"
-      href="src/styles/main.scss"
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22black%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22white%22>N</text></svg>"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.scss" />
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <body class="page__body">
+    <header class="header" id="home">
+      <div class="top-bar">
+        <a class="logo" href="#home" aria-label="Nothing home">NOTHING</a>
+        <div class="top-bar__actions">
+          <a class="icon icon--phone" href="tel:+442080175745" aria-label="Call us"></a>
+          <a class="icon icon--menu" href="#menu" aria-label="Open menu"></a>
+        </div>
+      </div>
+
+      <div class="header__content container">
+        <p class="header__eyebrow">Pure instinct.</p>
+        <h1 class="header__title">Feel every<br />moment.</h1>
+        <a class="button button--light" href="#products">Explore products</a>
+      </div>
+    </header>
+
+    <aside class="page__menu menu" id="menu">
+      <div class="menu__top top-bar">
+        <a class="logo" href="#home">NOTHING</a>
+        <a class="icon icon--close" href="#home" aria-label="Close menu"></a>
+      </div>
+      <nav class="menu__nav" aria-label="Main navigation">
+        <a class="menu__link" href="#products">Products</a>
+        <a class="menu__link" href="#story">Our story</a>
+        <a class="menu__link" href="#community">Community</a>
+        <a class="menu__link" href="#contact">Contact us</a>
+      </nav>
+      <a class="menu__phone" href="tel:+442080175745">+44 20 8017 5745</a>
+    </aside>
+
+    <main>
+      <section class="section container" id="products">
+        <p class="section__label">Designed in London</p>
+        <h2 class="section__title">Recommended products</h2>
+        <div class="products">
+          <article class="product">
+            <a class="product__image-link" href="#contact">
+              <img
+                class="product__image"
+                src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=85"
+                alt="White wireless earbuds"
+              />
+            </a>
+            <h3 class="product__title">Ear (2)</h3>
+            <p class="product__description">High-resolution sound. Pure connection.</p>
+            <p class="product__price">$149</p>
+          </article>
+          <article class="product">
+            <a class="product__image-link" href="#contact">
+              <img
+                class="product__image"
+                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85"
+                alt="Minimal smartphone"
+              />
+            </a>
+            <h3 class="product__title">Phone (2)</h3>
+            <p class="product__description">A new icon. Come to the bright side.</p>
+            <p class="product__price">$599</p>
+          </article>
+          <article class="product">
+            <a class="product__image-link" href="#contact">
+              <img
+                class="product__image"
+                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=85"
+                alt="Black wireless headphones"
+              />
+            </a>
+            <h3 class="product__title">Ear (stick)</h3>
+            <p class="product__description">Feather-light. Vivid sound.</p>
+            <p class="product__price">$99</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="story">
+        <div class="container split">
+          <div>
+            <p class="section__label">Our story</p>
+            <h2 class="section__title">Technology should fade into the background.</h2>
+          </div>
+          <div class="story">
+            <p>
+              We make technology fun again. By removing barriers between people and
+              technology, we create products that are intuitive, beautifully connected,
+              and unmistakably different.
+            </p>
+            <p>Less distraction. More soul.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="community">
+        <p class="section__label">Better together</p>
+        <h2 class="section__title">Built with our community</h2>
+        <div class="gallery">
+          <a class="gallery__item gallery__item--wide" href="#contact">
+            <img
+              src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1400&q=85"
+              alt="Smartphone detail"
+            />
+          </a>
+          <a class="gallery__item" href="#contact">
+            <img
+              src="https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&w=900&q=85"
+              alt="Earbuds in a charging case"
+            />
+          </a>
+          <a class="gallery__item" href="#contact">
+            <img
+              src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=85"
+              alt="Modern smartphone on a desk"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="section container contact" id="contact">
+        <div>
+          <p class="section__label">Let’s talk</p>
+          <h2 class="section__title">Get in touch</h2>
+          <form class="form" onsubmit="this.reset(); return false;">
+            <input class="form__field" type="text" name="name" placeholder="Your name" required />
+            <input
+              class="form__field"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+            <textarea
+              class="form__field form__field--message"
+              name="message"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+            <button class="button button--dark" type="submit">Send message</button>
+          </form>
+        </div>
+        <address class="contact__details">
+          <div>
+            <p class="contact__label">Phone</p>
+            <a class="contact__link" href="tel:+442080175745">+44 20 8017 5745</a>
+          </div>
+          <div>
+            <p class="contact__label">Email</p>
+            <a class="contact__link" href="mailto:hello@nothing.tech">hello@nothing.tech</a>
+          </div>
+          <div>
+            <p class="contact__label">Address</p>
+            <a
+              class="contact__link"
+              href="https://maps.google.com/?q=32+Rivington+Street+London"
+              target="_blank"
+              rel="noreferrer"
+            >32 Rivington Street<br />London EC2A 3LX</a>
+          </div>
+        </address>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo logo--footer" href="#home">NOTHING</a>
+      <p class="footer__copyright">© 2026 Nothing Technology Limited</p>
+    </footer>
   </body>
 </html>
